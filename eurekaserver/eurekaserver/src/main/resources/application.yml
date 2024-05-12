@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eurekaserver # � o discorvery server
+  security:
+    basic:
+      enabled: true
+    user:
+      name: root
+      password: toor
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false # n�o se auto registrar com eureka
+    fetch-registry: false # n�o buscar registros dos micros servi�os, o gateway � quem faz isso
+
+
